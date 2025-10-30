@@ -27,7 +27,7 @@ def log(translation, definition, src='en', dest='tr'):
     synonyms_src = all_translations[2][1][1]  # ['şeytan', 'iblis']
     synonyms_dest = all_translations[1]  # ['şeytan', 'iblis']
     
-    print("=" * 50)
+    print("\n" + ("=" * 50))
     
     print(f"Word ({src}): {translation}")
     print(f"Translation ({dest}): {word}")
@@ -43,7 +43,7 @@ def log(translation, definition, src='en', dest='tr'):
     print('Definition:')
     print(definition)
 
-last_copied = ""
+last_copied = pyperclip.paste().strip()
 print("Clipboard tracker started. Ctrl + c to exit.")
 
 try:
