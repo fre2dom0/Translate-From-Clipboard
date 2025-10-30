@@ -18,8 +18,8 @@ async def definite(word):
 def log(translation, definition, src='en', dest='tr'):
     data = translation
     # Main translation
-    main_translation = data['translation'][0][0]  
-    target_translation = data['translation'][0][1] 
+    word = data['translation'][0][0]  
+    translation = data['translation'][0][1] 
     
     # Alternatives
     all_translations = data['all-translations'][0]
@@ -29,8 +29,8 @@ def log(translation, definition, src='en', dest='tr'):
     
     print("=" * 50)
     
-    print(f"Word ({src}): {main_translation}")
-    print(f"Translation ({dest}): {target_translation}")
+    print(f"Word ({src}): {translation}")
+    print(f"Translation ({dest}): {word}")
     print(f"Precise: {data['confidence']:.4f}")
 
     print("-" * 50)
