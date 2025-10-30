@@ -43,10 +43,8 @@ def log(translation, definition, src='en', dest='tr'):
     print('Definition:')
     print(definition)
 
-    print("=" * 50)
-
 last_copied = ""
-print("Kopyalama izleyici başladı. Çıkmak için Ctrl+C tuşlayın.")
+print("Clipboard tracker started. Ctrl + c to exit.")
 
 try:
     while True:
