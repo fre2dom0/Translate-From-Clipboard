@@ -23,9 +23,9 @@ def log(translation, definition, src='en', dest='tr'):
     
     # Alternatives
     all_translations = data['all-translations'][0]
-    word_type = all_translations[0]  # "isim"
-    synonyms_src = all_translations[2][1][1]  # ['şeytan', 'iblis']
-    synonyms_dest = all_translations[1]  # ['şeytan', 'iblis']
+    word_type = all_translations[0] 
+    synonyms_src = all_translations[2][1][1] 
+    synonyms_dest = all_translations[1]
     
     print("\n" + ("=" * 50))
     
